@@ -1,0 +1,17 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+<img src="{% static 'img/foto.jpg' %}" alt="Minha Imagem">
+
+<h2> template</h2>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
