@@ -1,5 +1,21 @@
-<ul>
+{% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
+
+<h1>Hello</h1>
+<p>This page contains a footer in a template.</p>
+
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
   {% for x in mymembers %}
-    <li>{{ x.firstname }}</li>
+    <tr>
+      <td>{{ x.id }}</td>
+      <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
   {% endfor %}
-</ul>
+</table>
+
+{% include 'footer.html' %} 

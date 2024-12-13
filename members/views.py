@@ -35,10 +35,9 @@ def main(request):
     
 
 def testing(request):
-  mymembers = Member.objects.all().values()
+  mydata = Member.objects.filter(firstname='daniel').values()
   template = loader.get_template('template.html')
   context = {
-    'mymembers': mymembers,
+    'mymembers': mydata,
   }
-
   return HttpResponse(template.render(context, request))
