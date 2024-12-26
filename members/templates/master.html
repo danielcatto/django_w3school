@@ -1,16 +1,16 @@
-
-{% load static %}
+{% load static %} 
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %} {% endblock %}</title>
+    <title>My Video Club</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-
-
-<h2> template</h2>
+    
+<h1>videos</h1>
 {% block content %}
+
 {% endblock %}
 
 </body>

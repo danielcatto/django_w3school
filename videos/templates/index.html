@@ -1,0 +1,18 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+My video Club
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<h2>Visualizar o video</h2>
+
+    <ul>
+    {% for nome in vi%}
+    <li><a href="exibir_video/{{nome}}">{{ nome }}  </a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}    

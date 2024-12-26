@@ -1,0 +1,21 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+My video Club
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<h2>Visualizar o video</h2>
+
+<h1>{{nome}}</h1>
+<video width="320" height="240" controls>
+    <source src="{% static 'videos/'%}{{nome}}.mp4" type="video/mp4">
+ 
+    Seu navegador não suporta o elemento de vídeo.
+</video>
+
+
+{% endblock %} 
